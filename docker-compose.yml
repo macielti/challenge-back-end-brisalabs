@@ -5,7 +5,7 @@ services:
     image: postgres
     restart: always
     env_file:
-      - ./.envs/.env.dev
+      - ./envs/.env.dev
     ports:
       - "${POSTGRES_DEV_PORT}:5432"
 
@@ -13,6 +13,6 @@ services:
     image: postgres
     restart: always
     env_file:
-      - ./.envs/.env.test
+      - ./envs/.env.test
     ports:
       - "${POSTGRES_TEST_PORT}:5432"
