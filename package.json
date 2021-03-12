@@ -1,11 +1,13 @@
 {
   "name": "challenge-back-end-brisalabs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "repository": "git@github.com:macielti/challenge-back-end-brisalabs.git",
   "author": "Bruno do Nascimento Maciel <brunodonascimentomaciel@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc --project ./",
+    "start": "NODE_ENV=prod node src/server.js",
     "dev": "NODE_ENV=dev ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
     "test": "NODE_ENV=test jest --detectOpenHandles",
