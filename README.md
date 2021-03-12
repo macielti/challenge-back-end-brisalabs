@@ -58,6 +58,9 @@
 
 ## Original Repo: https://github.com/brisalabs/challenge-back-end
 
+## Common:
+- Set up the .env files according to example files
+
 ## How To Execute Tests:
 - First you need to put up the database for testing and development enviromnent: `docker-compose -f docker-compose.dev.yml up -d --build` (the same for dev enviromnent)
 - Second you need to run `yarn` and `yarn test`
