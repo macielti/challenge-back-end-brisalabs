@@ -1,3 +1,4 @@
 node_modules
 envs
 .env
+build
